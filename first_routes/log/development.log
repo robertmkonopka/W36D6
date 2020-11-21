@@ -49,3 +49,197 @@ No template found for UsersController#index, rendering head :no_content
 Completed 204 No Content in 232ms (ActiveRecord: 0.0ms)
 
 
+Started GET "/users.html" for ::1 at 2020-11-20 19:52:45 -0800
+Processing by UsersController#index as HTML
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users.html" for ::1 at 2020-11-20 19:53:21 -0800
+Processing by UsersController#index as HTML
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2020-11-20 19:54:20 -0800
+Processing by UsersController#index as */*
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?favorite_drink=coffee" for ::1 at 2020-11-20 19:57:47 -0800
+Processing by UsersController#index as */*
+  Parameters: {"favorite_drink"=>"coffee"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?favorite_car=z" for ::1 at 2020-11-20 19:58:10 -0800
+Processing by UsersController#index as */*
+  Parameters: {"favorite_car"=>"z"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?favorite_car=ae86" for ::1 at 2020-11-20 19:58:21 -0800
+Processing by UsersController#index as */*
+  Parameters: {"favorite_car"=>"ae86"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?admin=true" for ::1 at 2020-11-20 19:58:45 -0800
+Processing by UsersController#index as */*
+  Parameters: {"admin"=>"true"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users?admin=true" for ::1 at 2020-11-20 20:00:18 -0800
+
+AbstractController::ActionNotFound - The action 'create' could not be found for UsersController:
+
+Started POST "/users?admin=true" for ::1 at 2020-11-20 20:02:39 -0800
+Processing by UsersController#create as */*
+  Parameters: {"admin"=>"true"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users?admin=true" for ::1 at 2020-11-20 20:02:55 -0800
+Processing by UsersController#create as */*
+  Parameters: {"admin"=>"true", "fav_car"=>"nsx"}
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users?admin=true" for ::1 at 2020-11-20 20:03:08 -0800
+Processing by UsersController#create as */*
+  Parameters: {"admin"=>"true", "fav_car"=>"nsx", "fav_food"=>"sushi"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users?admin=true" for ::1 at 2020-11-20 20:03:32 -0800
+Processing by UsersController#create as */*
+  Parameters: {"admin"=>"true", "fav_car"=>"nsx", "fav_food"=>"sushi", "ps5_or_xbox"=>"ps5"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users?admin=true" for ::1 at 2020-11-20 20:03:42 -0800
+Processing by UsersController#create as */*
+  Parameters: {"admin"=>"true", "fav_car"=>"nsx", "fav_food"=>"sushi", "ps5_or_xbox"=>"ps5", "fav_dog"=>"Daisy"}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/2" for ::1 at 2020-11-20 20:07:57 -0800
+
+AbstractController::ActionNotFound - The action 'show' could not be found for UsersController:
+
+Started GET "/users/2" for ::1 at 2020-11-20 20:08:24 -0800
+Processing by UsersController#show as */*
+  Parameters: {"admin"=>"true", "fav_car"=>"nsx", "fav_food"=>"sushi", "ps5_or_xbox"=>"ps5", "fav_dog"=>"Daisy", "id"=>"2"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for ::1 at 2020-11-20 20:08:30 -0800
+Processing by UsersController#show as */*
+  Parameters: {"admin"=>"true", "fav_car"=>"nsx", "fav_food"=>"sushi", "ps5_or_xbox"=>"ps5", "fav_dog"=>"Daisy", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/2" for ::1 at 2020-11-20 20:10:15 -0800
+Processing by UsersController#show as */*
+  Parameters: {"admin"=>"true", "fav_car"=>"nsx", "fav_food"=>"sushi", "ps5_or_xbox"=>"ps5", "fav_dog"=>"Daisy", "id"=>"2"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/2" for ::1 at 2020-11-20 20:15:14 -0800
+Processing by UsersController#show as */*
+  Parameters: {"food"=>{"fav_cookie"=>"choco chip", "fav_noodles"=>"ramen", "sport"=>{"fav"=>"basketball"}}, "occupation"=>"developer", "id"=>"2"}
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/2" for ::1 at 2020-11-20 20:21:49 -0800
+  
+ActionController::RoutingError (No route matches [POST] "/users/2"):
+  
+actionpack (5.2.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.4) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.4) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/2" for ::1 at 2020-11-20 20:24:25 -0800
+Processing by UsersController#show as */*
+  Parameters: {"food"=>{"fav_cookie"=>"choco chip", "fav_noodles"=>"ramen", "sport"=>{"fav"=>"basketball"}}, "occupation"=>"developer", "id"=>"2"}
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-11-20 20:26:39 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/Air/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/Air/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb (5.9ms)
+Completed 200 OK in 36ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2020-11-20 20:26:51 -0800
+Processing by UsersController#index as HTML
+  Rendering text template
+  Rendered text template (0.1ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/2" for ::1 at 2020-11-20 20:26:57 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2020-11-20 20:27:39 -0800
+Processing by UsersController#index as */*
+  Parameters: {"food"=>{"fav_cookie"=>"choco chip", "fav_noodles"=>"ramen", "sport"=>{"fav"=>"basketball"}}, "occupation"=>"developer"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?head=false" for ::1 at 2020-11-20 20:28:09 -0800
+Processing by UsersController#index as */*
+  Parameters: {"food"=>{"fav_cookie"=>"choco chip", "fav_noodles"=>"ramen", "sport"=>{"fav"=>"basketball"}}, "occupation"=>"developer", "head"=>"false"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users?head=false" for ::1 at 2020-11-20 20:28:25 -0800
+Processing by UsersController#create as */*
+  Parameters: {"food"=>{"fav_cookie"=>"choco chip", "fav_noodles"=>"ramen", "sport"=>{"fav"=>"basketball"}}, "occupation"=>"developer", "head"=>"false"}
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
